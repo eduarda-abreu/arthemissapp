@@ -74,14 +74,18 @@ class PagISTs extends StatelessWidget {
               ),
 
               const SizedBox(height: 20),
-              const Text(
-                '🌸 Principais ISTs que Afetam as Mulheres:',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF5D100E),
+
+              Center(
+                child: Text(
+                  '🌸 Principais ISTs que Afetam as Mulheres:',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5D100E),
+                  ),
                 ),
               ),
+
               const SizedBox(height: 10),
 
               //Gono
@@ -133,12 +137,15 @@ class PagISTs extends StatelessWidget {
               ),
 
               const SizedBox(height: 20),
-              const Text(
-                '🩺 Prevenção e Cuidados:',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF5D100E),
+
+              Center(
+                child: Text(
+                  '🩺 Prevenção e Cuidados:',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5D100E),
+                  ),
                 ),
               ),
 

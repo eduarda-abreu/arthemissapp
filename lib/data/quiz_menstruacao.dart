@@ -1,6 +1,5 @@
 import 'package:arthemisapp/data/quiz_data.dart';
-import 'package:flutter/material.dart';
-import 'dart:math'; // Ajuste o caminho
+import 'package:flutter/material.dart'; // Ajuste o caminho
 
 final QuizTopic quizMenstruacao = QuizTopic(
   title: 'Menstruação',

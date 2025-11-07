@@ -1,4 +1,5 @@
 import 'package:arthemisapp/widgets/info_bullet.dart';
+import 'package:arthemisapp/widgets/infocard.dart';
 import 'package:arthemisapp/widgets/menulateral.dart';
 import 'package:arthemisapp/widgets/meuapp_bar.dart';
 import 'package:arthemisapp/widgets/secinfo_bullet.dart';
@@ -27,21 +28,24 @@ class PagMenopausa extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Título do Artigo
-              const Text(
-                'Menopausa',
-                style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF5D100E),
+              const Center(
+                child: Text(
+                  'Menopausa: Um Novo Ciclo na Vida da Mulher',
+                  textAlign:
+                      TextAlign.center, // Centraliza o texto se quebrar linha
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5D100E),
+                  ),
                 ),
               ),
-              const SizedBox(height: 20),
 
               // Imagem Ilustrativa (substitua pela sua)
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.network(
-                  'https://thumbs.dreamstime.com/b/menstrua%C3%A7%C3%A3o-feminina-mulheres-com-per%C3%ADodo-absorvente-higi%C3%AAnico-e-x%C3%ADcara-menstrual-ilustra%C3%A7%C3%A3o-do-tamp%C3%A3o-acess%C3%B3rio-vetorial-228775829.jpg',
+                  'https://media.istockphoto.com/id/1448326178/pt/vetorial/grandmother-sitting-with-biological-clocks-limited-fertility-medical-concept-feminine-age.jpg?s=612x612&w=0&k=20&c=K0jYntV8dHw7AudTbY929LaUhWP0dtdyvN_ZS3n5_NY=',
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -56,12 +60,16 @@ class PagMenopausa extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              const Text(
-                'O que é a Menopausa?',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF5D100E),
+              const Center(
+                child: Text(
+                  '🌷 O que é a Menopausa?',
+                  textAlign:
+                      TextAlign.center, // Centraliza o texto se quebrar linha
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5D100E),
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
@@ -71,14 +79,14 @@ class PagMenopausa extends StatelessWidget {
                 style: TextStyle(fontSize: 16, height: 1.5),
               ),
 
-              SizedBox(height: 10),
+              SizedBox(height: 15),
 
               const Text(
                 'As Fases da Menopausa',
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF5D100E),
+                  color: Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
 
@@ -104,12 +112,16 @@ class PagMenopausa extends StatelessWidget {
                     ' Fase que se estende pelo resto da vida e pode aumentar a predisposição a osteoporose e doenças cardiovasculares.',
               ),
 
-              const Text(
-                'Sintomas mais comuns da menopausa',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF5D100E),
+              const Center(
+                child: Text(
+                  '🧬 Sintomas mais comuns da menopausa',
+                  textAlign:
+                      TextAlign.center, // Centraliza o texto se quebrar linha
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5D100E),
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
@@ -181,6 +193,70 @@ class PagMenopausa extends StatelessWidget {
               const InfoBullet(
                 label: 'Risco cardiovascular-',
                 text: 'aumento da pressão arterial e do colesterol ruim (LDL).',
+              ),
+
+              const Center(
+                child: Text(
+                  '🌿 Como lidar com a menopausa?',
+                  textAlign:
+                      TextAlign.center, // Centraliza o texto se quebrar linha
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5D100E),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 15),
+              const Text(
+                'A menopausa não é uma doença, mas sim uma fase natural da vida. Por isso, não existe um “remédio para a menopausa”, mas algumas práticas ajudam a tornar esse período mais confortável:',
+                style: TextStyle(fontSize: 16, height: 1.5),
+              ),
+
+              const SizedBox(height: 10),
+
+              InfoCardWidget(
+                title: 'Pratique exercícios físicos',
+                bulletPoints: [
+                  'Atividades como caminhada, yoga e musculação ajudam a fortalecer os ossos e aliviar o estresse.',
+                  'Exercícios aeróbicos melhoram a saúde cardiovascular e auxiliam no controle do peso.',
+                ],
+              ),
+
+              InfoCardWidget(
+                title: 'Consulte um especialista',
+                bulletPoints: [
+                  'Ginecologistas e endocrinologistas podem indicar a melhor abordagem para o seu caso.',
+                  'Exames regulares, como mamografia e densitometria óssea, são essenciais nessa fase.',
+                ],
+              ),
+
+              InfoCardWidget(
+                title: 'Cuide do seu bem-estar emocional',
+                bulletPoints: [
+                  'Terapia e grupos de apoio podem ajudar a lidar com as mudanças emocionais.',
+
+                  'Técnicas de relaxamento, como meditação e respiração consciente, reduzem a ansiedade.',
+                ],
+              ),
+
+              InfoCardWidget(
+                title: 'Mantenha uma alimentação equilibrada',
+                bulletPoints: [
+                  'Consuma cálcio e vitamina D para ossos fortes.',
+                  'Evite excesso de açúcar e gordura para manter o peso.',
+
+                  'Beba água para hidratar a pele e prevenir o ressecamento vaginal.',
+                ],
+              ),
+
+              InfoCardWidget(
+                title: 'Reposição hormonal (se necessário)',
+                bulletPoints: [
+                  'Consuma cálcio e vitamina D para ossos fortes.',
+                  'Há opções naturais, como isoflavonas de soja, que ajudam a equilibrar os hormônios.',
+                ],
               ),
             ],
           ),
