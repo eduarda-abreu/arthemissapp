@@ -2,12 +2,14 @@ import 'package:arthemisapp/pages/pag_amamentacao.dart';
 import 'package:arthemisapp/pages/pag_cesaria.dart';
 import 'package:arthemisapp/pages/pag_corpo.dart';
 import 'package:arthemisapp/pages/pagcistonoovario.dart';
+import 'package:arthemisapp/pages/pagcorrimento.dart';
 import 'package:arthemisapp/pages/pagexameginecologico.dart';
 import 'package:arthemisapp/pages/pagists.dart';
 import 'package:arthemisapp/pages/pagmenopausa.dart';
 import 'package:arthemisapp/pages/pagmenstruacao.dart';
 import 'package:arthemisapp/pages/pagmetodos.dart';
 import 'package:arthemisapp/pages/pagpuberdade.dart';
+import 'package:arthemisapp/pages/pagsop.dart';
 import 'package:flutter/material.dart';
 // IMPORTANTE: Importe a página de destino que você criou
 import '../pages/pagendometriose.dart'; // Ajuste o caminho se necessário
@@ -100,7 +102,7 @@ class ContentSection extends StatelessWidget {
             'https://dev-arthemiss.pantheonsite.io/wp-content/uploads/2025/04/sop-img.png',
         'title': 'Síndrome do Ovário Policístico',
         'description': 'Conheça os sintomas e formas de tratamento da SOP.',
-        'destinationPage': const PagEndometriose(),
+        'destinationPage': const PagSop(),
       },
 
       //Puberdade
@@ -147,7 +149,7 @@ class ContentSection extends StatelessWidget {
             'https://dev-arthemiss.pantheonsite.io/wp-content/uploads/2025/04/corrimento-e1747062859519.jpg',
         'title': 'Corrimento vaginal',
         'description': 'Saiba quando é normal e quando exige cuidados.',
-        'destinationPage': const PagPuberdade(),
+        'destinationPage': const PagCorrimento(),
       },
 
       //Candidíase e vaginose

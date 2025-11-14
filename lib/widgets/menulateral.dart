@@ -11,6 +11,7 @@ import 'package:arthemisapp/data/quiz_ist.dart';
 import 'package:arthemisapp/data/quiz_menopausa.dart' show quizMenopausa;
 import 'package:arthemisapp/data/quiz_menstruacao.dart';
 import 'package:arthemisapp/data/quiz_metcontracept.dart';
+import 'package:arthemisapp/data/quiz_ovariopoli.dart';
 import 'package:arthemisapp/data/quiz_puberdade.dart';
 import 'package:arthemisapp/pages/home_page.dart';
 import 'package:arthemisapp/pages/pag_amamentacao.dart';
@@ -18,6 +19,7 @@ import 'package:arthemisapp/pages/pag_cesaria.dart';
 import 'package:arthemisapp/pages/pag_corpo.dart';
 import 'package:arthemisapp/pages/pag_hpv.dart';
 import 'package:arthemisapp/pages/pagcistonoovario.dart';
+import 'package:arthemisapp/pages/pagcorrimento.dart';
 import 'package:arthemisapp/pages/pagendometriose.dart';
 import 'package:arthemisapp/pages/pagexameginecologico.dart';
 import 'package:arthemisapp/pages/pagists.dart';
@@ -26,6 +28,8 @@ import 'package:arthemisapp/pages/pagmenstruacao.dart';
 import 'package:arthemisapp/pages/pagmetodos.dart';
 import 'package:arthemisapp/pages/pagpuberdade.dart';
 import 'package:arthemisapp/pages/pagrecomendacao.dart';
+import 'package:arthemisapp/pages/pagsop.dart';
+import 'package:arthemisapp/pages/pagvaginose.dart';
 import 'package:arthemisapp/pages/quiz_page.dart';
 import 'package:flutter/material.dart';
 
@@ -195,6 +199,19 @@ class MenuLateral extends StatelessWidget {
                 },
               ),
 
+              //sop
+              ListTile(
+                contentPadding: const EdgeInsets.only(left: 30.0),
+                title: const Text('Síndrome do ovário policistico'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const PagSop()),
+                  );
+                },
+              ),
+
               //puberdade
               ListTile(
                 contentPadding: const EdgeInsets.only(left: 30.0),
@@ -260,7 +277,7 @@ class MenuLateral extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const PagPuberdade(),
+                      builder: (context) => const PagCorrimento(),
                     ),
                   );
                 },
@@ -275,7 +292,7 @@ class MenuLateral extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const PagPuberdade(),
+                      builder: (context) => const PagVaginose(),
                     ),
                   );
                 },
@@ -401,6 +418,19 @@ class MenuLateral extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => QuizPage(topic: quizEndometriose),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                contentPadding: const EdgeInsets.only(left: 40.0),
+                title: Text(quizOvariopoli.title),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => QuizPage(topic: quizOvariopoli),
                     ),
                   );
                 },

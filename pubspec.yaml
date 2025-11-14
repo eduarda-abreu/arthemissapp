@@ -43,8 +43,7 @@ dev_dependencies:
     sdk: flutter
 
     
-  google_fonts: ^6.2.1  # Você pode usar a versão mais recente
-
+  
   # Exemplo de onde ela deve ficar
 
   # The "flutter_lints" package below contains a set of recommended lints to

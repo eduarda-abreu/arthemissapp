@@ -1,4 +1,5 @@
 // Import da página de testes
+import 'package:arthemisapp/widgets/menulateral.dart';
 import 'package:arthemisapp/widgets/meuapp_bar.dart';
 
 import 'pagdirtestes.dart';
@@ -79,7 +80,8 @@ class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MeuAppBar(titulo: 'Cesárea vs Parto Normal', mostrarLogo: true),
+      appBar: MeuAppBar(titulo: 'Quiz Arthemiss', mostrarLogo: true),
+      endDrawer: const MenuLateral(),
       body: _quizFinished ? _buildResultsScreen() : _buildQuizScreen(),
     );
   }
